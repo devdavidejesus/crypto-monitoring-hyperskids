@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 config.py
 
+=======
+# Ignorar arquivos de ambiente (não envie senhas ou chaves!)
+.env
+config.py
+
+# Ignorar pastas de dependências
+__pycache__/
+venv/
+env/
+.venv/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do sistema operacional
+>>>>>>> 405920eb425c46c97eb58060c8006e95921e93b3
 .DS_Store
