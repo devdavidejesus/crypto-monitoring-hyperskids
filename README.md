@@ -5,33 +5,63 @@
 
 ## Descrição
 
-Este projeto é um monitoramento automatizado da criptomoeda HYPERSKIDS. Ele monitora o preço e o volume de negociação da criptomoeda, enviando alertas por WhatsApp quando há mudanças significativas e gerando relatórios diários por e-mail com o lucro ou prejuízo do investimento.
+Monitoramento automatizado da criptomoeda HYPERSKIDS com alertas de preço e volume via WhatsApp e envio de relatórios por e-mail.
 
 ## Funcionalidades
 
-- Monitora o preço e volume de HYPERSKIDS em tempo real.
-- Envia alertas por WhatsApp quando há variações significativas de preço e volume.
-- Gera relatórios diários por e-mail com o lucro ou prejuízo do investimento.
-- Configuração fácil e rápida.
+- Monitoramento em tempo real do preço em BRL
+- Cálculo automático de lucro/prejuízo
+- Relatórios via e-mail
+- Alertas via WhatsApp
+- Tracking de market cap e volume
+- Suporte a fuso horário UTC-3 (Maceió)
 
-## Tecnologias Utilizadas
+## Requisitos
 
-- Python 3 para o desenvolvimento do script.
-- Twilio para envio de alertas via WhatsApp.
-- CoinGecko API para obter os dados da criptomoeda.
-- Gmail SMTP para envio de e-mails.
-
-## Pré-requisitos
-
-Para rodar este projeto, você precisará:
-- Python 3.7 ou superior instalado.
-- Conta no Twilio para enviar mensagens via WhatsApp.
-- Conta no Gmail para envio de e-mails.
-- Acesso à CoinGecko API para dados da criptomoeda HYPERSKIDS.
+- Python 3.7+
+- Twilio Account
+- Gmail Account
+- API CoinGecko
 
 ## Configuração
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/devdavidejesus/crypto-monitoring-hyperskids.git
-   cd crypto-monitoring-hyperskids
+```bash
+git clone https://github.com/devdavidejesus/crypto-monitoring-hyperskids.git
+cd crypto-monitoring-hyperskids
+```
+
+2. Configure as variáveis no arquivo config.py:
+```python
+TWILIO_ACCOUNT_SID = "seu_sid"
+TWILIO_AUTH_TOKEN = "seu_token"
+TWILIO_WHATSAPP_NUMBER = "seu_numero_twilio"
+YOUR_WHATSAPP_NUMBER = "seu_numero_whatsapp"
+EMAIL_ADDRESS = "seu_email"
+EMAIL_PASSWORD = "sua_senha"
+EMAIL_RECIPIENT = "email_destino"
+INITIAL_PRICE = valor_inicial
+AMOUNT = quantidade
+CRYPTO_ID = "hyperskids"
+CRYPTO_SYMBOL = "hysk"
+```
+
+3. Instale as dependências:
+```bash
+pip install requests twilio
+```
+
+4. Execute o script:
+```bash
+python monitor_hyperskids.py
+```
+
+## Desenvolvido por
+
+Davi de Jesus
+- GitHub: [@devdavidejesus](https://github.com/devdavidejesus)
+- LinkedIn: [devdavidejesus](https://linkedin.com/in/devdavidejesus)
+
+## Data de Criação
+
+12/02/2025
