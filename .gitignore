@@ -1,0 +1,15 @@
+# Ignorar arquivos de ambiente (não envie senhas ou chaves!)
+.env
+config.py
+
+# Ignorar pastas de dependências
+__pycache__/
+venv/
+env/
+.venv/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
